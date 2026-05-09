@@ -2,7 +2,6 @@ import { Link2, Play } from 'lucide-react';
 import { m, useReducedMotion } from 'framer-motion';
 import type { CSSProperties } from 'react';
 import type { MediaProject } from '../data/mediaProjects';
-import LogoPlaceholder from './LogoPlaceholder';
 
 interface EmbedProjectCardProps {
   project: MediaProject;
@@ -21,14 +20,13 @@ export default function EmbedProjectCard({ project, index, accent }: EmbedProjec
       whileTap={reduceMotion ? undefined : { scale: 0.98 }}
       transition={{ type: 'spring', stiffness: 420, damping: 28 }}
     >
-      <div className="mb-4 flex min-h-[6.75rem] items-start justify-between gap-4 sm:min-h-[7.5rem]">
+      <div className="mb-4 flex min-h-[6.75rem] items-start gap-4 sm:min-h-[7.5rem]">
         <div className="min-w-0">
           <p className="mb-3 inline-block border-[3px] border-ciel-ink px-2 py-1 font-display text-[0.62rem] uppercase" style={{ backgroundColor: accent }}>
             {project.kind}
           </p>
           <h3 className="card-title font-display text-[clamp(1.9rem,3.2vw,3rem)] uppercase leading-[0.9]">{project.title}</h3>
         </div>
-        <LogoPlaceholder name={project.title} accent={accent} />
       </div>
 
       <div className="relative aspect-video overflow-hidden border-[4px] border-ciel-ink bg-ciel-primary" style={{ boxShadow: `4px 4px 0 ${accent}` }}>

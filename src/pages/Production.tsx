@@ -9,7 +9,7 @@ export default function Production() {
         <section className="noise-surface bg-ciel-primary px-4 py-10 text-ciel-cream sm:px-6 lg:px-8 lg:py-14" aria-labelledby="production-heading">
           <div className="mx-auto max-w-[1400px]">
             <m.div
-              className="mb-10 flex flex-col gap-4 border-b-[5px] border-ciel-cyan pb-8 lg:flex-row lg:items-end lg:justify-between"
+              className="mb-10 flex flex-col gap-4 border-b-[5px] border-ciel-cyan pb-8 lg:flex-row lg:items-end"
               initial={{ opacity: 0, y: 18 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
@@ -23,9 +23,6 @@ export default function Production() {
                   Films
                 </h1>
               </div>
-              <p className="border-[4px] border-ciel-ink bg-ciel-purple px-4 py-3 font-display text-sm uppercase text-ciel-ink shadow-[5px_5px_0_var(--ciel-logo-cyan)]">
-                {productionProjects.length} Embed Slots
-              </p>
             </m.div>
 
             <div className="grid gap-8 sm:grid-cols-2 xl:grid-cols-3">

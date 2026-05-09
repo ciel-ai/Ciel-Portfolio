@@ -23,9 +23,6 @@ export default function Podcasts() {
                   Podcasts
                 </h1>
               </div>
-              <p className="border-[4px] border-ciel-ink bg-ciel-cyan px-4 py-3 font-display text-sm uppercase text-ciel-ink shadow-[5px_5px_0_var(--ciel-logo-purple)]">
-                {podcastProjects.length} Embed Slots
-              </p>
             </m.div>
 
             <div className="grid gap-8 sm:grid-cols-2 xl:grid-cols-3">

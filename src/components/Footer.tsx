@@ -2,9 +2,9 @@ import { Instagram, Linkedin, Mail } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const socials = [
-  { href: 'https://www.instagram.com/', label: 'Instagram', icon: Instagram },
-  { href: 'https://www.linkedin.com/', label: 'LinkedIn', icon: Linkedin },
-  { href: 'mailto:hello@ciel.agency', label: 'Email', icon: Mail }
+  { href: 'https://www.instagram.com/ciel.ai_?igsh=MTJ2bnMweXJtcmlhNA==', label: 'Instagram', icon: Instagram },
+  { href: 'https://www.linkedin.com/company/ciel-ai/', label: 'LinkedIn', icon: Linkedin },
+  { href: 'mailto:sales@cielinfitech.com', label: 'Email', icon: Mail }
 ];
 
 export default function Footer() {

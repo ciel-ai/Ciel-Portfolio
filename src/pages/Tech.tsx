@@ -21,19 +21,13 @@ export default function Tech() {
 
                 return (
                   <section key={category} aria-labelledby={`${category.toLowerCase().replace(/[^a-z0-9]+/g, '-')}-heading`}>
-                    <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+                    <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-end">
                       <h2
                         id={`${category.toLowerCase().replace(/[^a-z0-9]+/g, '-')}-heading`}
                         className="font-display text-[clamp(2.3rem,6vw,5.5rem)] uppercase leading-[0.84]"
                       >
                         {category}
                       </h2>
-                      <p
-                        className="w-fit border-[4px] border-ciel-ink px-3 py-2 font-display text-xs uppercase text-ciel-ink shadow-[4px_4px_0_var(--ciel-ink)]"
-                        style={{ backgroundColor: getCategoryAccent(category) }}
-                      >
-                        {categoryProjects.length} Projects
-                      </p>
                     </div>
 
                     <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">

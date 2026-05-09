@@ -6,7 +6,6 @@ const tiles = [
   {
     to: '/digital-marketing',
     label: 'Digital Marketing',
-    count: '21 Brands',
     copy: 'Social, influencer, performance, and FMCG work arranged as hard proof.',
     icon: Megaphone,
     color: 'var(--ciel-logo-cyan)',
@@ -24,7 +23,6 @@ const tiles = [
   {
     to: '/production',
     label: 'Production',
-    count: '4 Films',
     copy: 'Film projects reserved with embed slots for finished releases, trailers, and reels.',
     icon: Video,
     color: 'var(--ciel-logo-purple)',
@@ -33,7 +31,6 @@ const tiles = [
   {
     to: '/podcasts',
     label: 'Podcasts',
-    count: '5 Shows',
     copy: 'Podcast properties structured for embedded episodes and show assets.',
     icon: Mic2,
     color: 'var(--ciel-logo-cyan)',
@@ -45,32 +42,16 @@ export default function Home() {
   return (
     <main>
       <section className="noise-surface border-b-[5px] border-ciel-ink bg-ciel-primary px-4 py-12 text-ciel-cream sm:px-6 lg:px-8 lg:py-20">
-        <div className="mx-auto grid max-w-[1400px] gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
-          <div>
-            <p className="mb-5 inline-block border-[4px] border-ciel-ink bg-ciel-purple px-3 py-2 font-display text-xs uppercase text-ciel-ink shadow-[4px_4px_0_var(--ciel-ink)]">
-              Portfolio // Full Index
-            </p>
-            <h1 className="font-display text-[clamp(3.8rem,16vw,13rem)] uppercase leading-[0.78] tracking-normal">
-              CIEL
-            </h1>
-            <p className="mt-6 max-w-3xl text-2xl font-bold leading-tight sm:text-3xl">
-              A bold client portfolio for a digital marketing and technology agency built to scale without losing its edge.
-            </p>
-          </div>
-
-          <div className="border-[5px] border-ciel-ink bg-ciel-violet p-5 text-ciel-ink shadow-brutal-sm lg:p-7 lg:shadow-brutal">
-            <p className="font-display text-sm uppercase">Raw Index</p>
-            <dl className="mt-5 grid grid-cols-2 gap-4">
-              <div className="border-[4px] border-ciel-ink bg-ciel-cream p-4 text-ciel-ink">
-                <dt className="font-display text-xs uppercase">Clients</dt>
-                <dd className="font-display text-5xl">21</dd>
-              </div>
-              <div className="border-[4px] border-ciel-ink bg-ciel-blue p-4 text-ciel-ink">
-                <dt className="font-display text-xs uppercase">Pages</dt>
-                <dd className="font-display text-5xl">04</dd>
-              </div>
-            </dl>
-          </div>
+        <div className="mx-auto max-w-[1400px]">
+          <p className="mb-5 inline-block border-[4px] border-ciel-ink bg-ciel-purple px-3 py-2 font-display text-xs uppercase text-ciel-ink shadow-[4px_4px_0_var(--ciel-ink)]">
+            Portfolio // Full Index
+          </p>
+          <h1 className="font-display text-[clamp(3.8rem,16vw,13rem)] uppercase leading-[0.78] tracking-normal">
+            CIEL
+          </h1>
+          <p className="mt-6 max-w-3xl text-2xl font-bold leading-tight sm:text-3xl">
+            A bold client portfolio for a digital marketing and technology agency built to scale without losing its edge.
+          </p>
         </div>
       </section>
 

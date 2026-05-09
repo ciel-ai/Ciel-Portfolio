@@ -10,9 +10,11 @@ interface BrandCardProps {
   services: Service[];
   videos: Client['videos'];
   accent: string;
+  logo?: string;
+  website?: string;
 }
 
-export default function BrandCard({ name, services, videos, accent }: BrandCardProps) {
+export default function BrandCard({ name, services, videos, accent, logo, website }: BrandCardProps) {
   const reduceMotion = useReducedMotion();
   const slots: [string | undefined, string | undefined] = [videos[0], videos[1]];
 
@@ -31,7 +33,7 @@ export default function BrandCard({ name, services, videos, accent }: BrandCardP
           </h3>
           <div className="mt-4 h-[5px] w-24 bg-ciel-ink" />
         </div>
-        <LogoPlaceholder name={name} accent={accent} />
+        <LogoPlaceholder name={name} accent={accent} logo={logo} website={website} />
       </div>
 
       <div className="grid gap-4 sm:grid-cols-2">

@@ -61,8 +61,8 @@ export default function VideoPlaceholder({ url, label, accent, title }: VideoPla
   return (
     <div
       ref={ref}
-      className="relative aspect-video overflow-hidden border-[4px] border-ciel-ink bg-ciel-primary text-ciel-cream"
-      style={{ boxShadow: `4px 4px 0 ${accent}` }}
+      className="relative overflow-hidden border-[4px] border-ciel-ink bg-ciel-primary text-ciel-cream"
+      style={{ boxShadow: `4px 4px 0 ${accent}`, aspectRatio: '9 / 16' }}
     >
       {url && canLoad && embedUrl ? (
         <iframe

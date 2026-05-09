@@ -33,14 +33,19 @@ export default function DigitalMarketing() {
                   Client Portfolio
                 </h1>
               </div>
-              <p className="border-[4px] border-ciel-ink bg-ciel-purple px-4 py-3 font-display text-sm uppercase text-ciel-ink shadow-[5px_5px_0_var(--ciel-logo-cyan)]">
-                {clients.length} Brand Cards
-              </p>
             </m.div>
 
             <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
               {clients.map((client) => (
-                <BrandCard key={client.id} name={client.name} services={client.services} videos={client.videos} accent={getBrandAccent(client)} />
+                <BrandCard
+                  key={client.id}
+                  name={client.name}
+                  services={client.services}
+                  videos={client.videos}
+                  accent={getBrandAccent(client)}
+                  logo={client.logo}
+                  website={client.website}
+                />
               ))}
             </div>
           </div>

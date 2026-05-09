@@ -139,9 +139,9 @@ a {
 
   .card-title {
     hyphens: none;
-    overflow-wrap: normal;
+    overflow-wrap: anywhere;
     text-wrap: balance;
-    word-break: normal;
+    word-break: break-word;
   }
 
   .brutal-tile {
