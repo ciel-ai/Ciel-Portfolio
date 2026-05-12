@@ -16,7 +16,7 @@ interface BrandCardProps {
 
 export default function BrandCard({ name, services, videos, accent, logo, website }: BrandCardProps) {
   const reduceMotion = useReducedMotion();
-  const slots: [string | undefined, string | undefined] = [videos[0], videos[1]];
+  const slots = ([videos[0], videos[1]] as (string | undefined)[]).filter((v) => v !== undefined);
 
   return (
     <m.article
@@ -36,15 +36,16 @@ export default function BrandCard({ name, services, videos, accent, logo, websit
         <LogoPlaceholder name={name} accent={accent} logo={logo} website={website} />
       </div>
 
-      <div className="grid gap-4 sm:grid-cols-2">
+      <div className={slots.length === 1 ? 'flex justify-center' : 'grid gap-4 sm:grid-cols-2'}>
         {slots.map((videoUrl, index) => (
-          <VideoPlaceholder
-            key={`${name}-video-${index + 1}`}
-            url={videoUrl}
-            label={`Video ${index + 1}`}
-            accent={accent}
-            title={name}
-          />
+          <div key={`${name}-video-${index + 1}`} className={slots.length === 1 ? 'w-[75%] sm:w-[65%]' : 'w-full min-w-0'}>
+            <VideoPlaceholder
+              url={videoUrl}
+              label={`Video ${index + 1}`}
+              accent={accent}
+              title={name}
+            />
+          </div>
         ))}
       </div>
 
