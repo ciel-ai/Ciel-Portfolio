@@ -18,14 +18,14 @@ export default function LogoPlaceholder({ name, accent = 'var(--ciel-logo-blue)'
 
   const inner = logo && !hasError ? (
     <div
-      className="grid h-20 w-20 shrink-0 place-items-center border-[4px] border-ciel-ink bg-ciel-cream shadow-[5px_5px_0_var(--ciel-logo-purple)]"
+      className="h-20 w-20 shrink-0 overflow-hidden rounded-full border-[4px] border-ciel-ink shadow-[5px_5px_0_var(--ciel-logo-purple)]"
       aria-label={`${name} logo`}
       title={name}
     >
       <img
         src={logo}
         alt={`${name} logo`}
-        className="h-full w-full object-contain"
+        className="h-full w-full object-cover object-top"
         onError={() => setHasError(true)}
       />
     </div>
