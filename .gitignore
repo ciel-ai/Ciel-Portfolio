@@ -6,3 +6,8 @@ vite.config.d.ts
 tailwind.config.js
 tailwind.config.d.ts
 .DS_Store
+
+# Original full-size source screenshots (resized copies live in public/images/)
+st[0-9].png
+ke[0-9].png
+[0-9]cid.png
