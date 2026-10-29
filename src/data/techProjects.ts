@@ -21,9 +21,10 @@ export const techProjects: TechProject[] = [
   { id: 'star-turmerics', name: 'Star Turmerics', category: 'Website Development', images: ['/images/starturmerics1.png', '/images/starturmerics2.png', '/images/starturmerics3.png'], url: 'https://www.starturmerics.com/' },
   { id: 'kora-exports', name: 'Kora Exports', category: 'Website Development', images: ['/images/koraexports1.png', '/images/koraexports2.png', '/images/koraexports3.png'], url: 'https://www.koraexports.com/' },
   { id: 'coloured-interiors', name: 'Coloured Interiors', category: 'Website Development', images: ['/images/coloredinteriors1.png', '/images/coloredinteriors2.png', '/images/coloredinteriors3.png'], url: 'https://www.coloredinteriordesign.com/' },
-  { id: 'fixit-app', name: 'Fixit', category: 'App Development & UI/UX', images: ['/images/fixitapp3.jpeg', '/images/fixitapp1.jpeg', '/images/fixitapp2.png'], url: 'https://www.thefixit.in/' },
+  { id: 'fixit-app', name: 'Fixit', category: 'App Development & UI/UX', images: ['/images/fixitapp-home.png', '/images/fixitapp-services.png', '/images/fixitapp-salon.png'], url: 'https://www.thefixit.in/' },
   { id: 'fixit-partner', name: 'Fixit Partner', category: 'App Development & UI/UX', images: ['/images/fixitpartner3.jpeg', '/images/fixitpartner2.jpeg', '/images/fixitpartner1.jpeg'], url: 'https://www.thefixit.in' },
   { id: 'astrodate-app', name: 'Astrodate', category: 'App Development & UI/UX', images: ['/images/astrodateapp1.jpeg', '/images/astrodateapp2.jpeg', '/images/astrodateapp3.jpeg'], url: 'https://www.astrodate.in/' },
+  { id: 'healthcare-app', name: 'Healthcare App', category: 'App Development & UI/UX', images: ['/images/healthcareapp-home.png', '/images/healthcareapp-doctors.png', '/images/healthcareapp-profile.png'] },
 ];
 
 export const techCategories: TechCategory[] = ['Website Development', 'App Development & UI/UX'];
